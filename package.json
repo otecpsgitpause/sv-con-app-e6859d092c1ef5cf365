@@ -1,0 +1,25 @@
+{
+  "name": "conector-sistema-venta-cursos",
+  "version": "1.0.0",
+  "description": "en este sistema se conectan las apps",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Rodrigo Muñoz Campos",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "braintreehttp": "^0.2.1",
+    "cors": "^2.8.4",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "lodash": "^4.17.4",
+    "method-override": "^2.3.10",
+    "morgan": "^1.9.0",
+    "os": "^0.1.1",
+    "request": "^2.83.0"
+  }
+}
