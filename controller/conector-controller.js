@@ -16,7 +16,8 @@ function authenticate(req,res){
         console.log({jsonData:j});
         
         
-        let sysIndex = _.findIndex(conf.apps, function (o) { return o.key == j.k; })
+        let sysIndex = _.findIndex(conf.apps, function (o) { return o.key == j.k; });
+        console.log({header:header,sysIndex:sysIndex,jk:j.k});
         if (sysIndex != -1) {
 
             if (conf.apps[sysIndex].origin == header.origin) {
