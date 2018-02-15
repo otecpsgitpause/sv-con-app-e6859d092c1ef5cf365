@@ -4,6 +4,11 @@
             "sistema":"sistema ventas cursos",
             "key":"ffgh/23r+345fds",
             "origin":"https://d41d8cd98plaf00b204e9o8009nln.firebaseapp.com"
+        },
+        {
+            "sistema":"sistema ventas cursos",
+            "key":"ffgh/23r+345fds",
+            "origin":"http://localhost:4201"
         }
     ]
 } 
