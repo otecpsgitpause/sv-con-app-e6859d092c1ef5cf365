@@ -16,11 +16,11 @@ function authenticate(req,res){
         console.log({jsonData:j});
         
         
-        let sysIndex = _.findIndex(conf.apps, function (o) { return o.key == j.k; });
+        let sysIndex = _.findIndex(conf.apps, function (o) { return o.origin == header.origin; });
         console.log({header:header,sysIndex:sysIndex,jk:j.k});
-        if (sysIndex != -1) {
+        if (sysIndex > -1) {
 
-            if (conf.apps[sysIndex].origin == header.origin) {
+            if (sysIndex > -1) {
                 console.log('origen pass');
                 //solicitando token
                 cryptoUtil.cryptoMethod.encode(JSON.stringify({keyApp:kapp})).then(enc=>{
